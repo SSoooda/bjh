@@ -15,9 +15,35 @@
 
     <div class="col-md-12">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
+        <br>
+        <br>
+
+        <table class="table table-responsive-xl table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>게시글 번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>최종 수정일</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                {{#each posts}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{title}}</td>
+                    <td>{{author}}</td>
+                    <td>{{modifiedDate}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
     </div>
 
-    <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
+
+<!--    모달 부분-->
+    <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -40,10 +66,10 @@
                             <label for="content">내용</label>
                             <textarea class="form-control" id="content" placeholder="내용을 입력하세요"></textarea>
                         </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
-                        <button type="button" class="btn btn-primary" id="btn-save">등록</button>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                            <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+                        </div>
                     </form>
                 </div>
             </div>

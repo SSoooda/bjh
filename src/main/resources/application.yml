@@ -1,4 +1,19 @@
 spring:
+  profiles:
+    active: local
+
+---
+
+spring:
+  profiles: local
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
   h2:
     console:
       enabled: true
+  sql:
+    init:
+      data-locations: classpath:data-h2.sql

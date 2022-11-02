@@ -15,8 +15,9 @@ public class WebRestController {
     private PostsRepository postsRepository;
 
     @PostMapping("/posts")
-    public void savePosts(@RequestBody PostsSaveRequestDto dto){
+    public boolean savePosts(@RequestBody PostsSaveRequestDto dto){
         postsRepository.save(dto.toEntity());
+        return true;
     }
 
     @GetMapping("/hello")

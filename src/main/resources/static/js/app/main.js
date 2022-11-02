@@ -6,23 +6,27 @@ let main= {
         });
     },
     save : function () {
-        let data ={
-            title : $('#title').val(),
-            author : $('#author').val(),
-            content : $('#content').val(),
+        let data = {
+            title: $('#title').val(),
+            author: $('#author').val(),
+            content: $('#content').val(),
         };
+
         $.ajax({
             type: 'POST',
             url: '/posts',
             dataType: 'json',
             contentType: 'application/json; charset=utf-8',
-            data : JSON.stringify(data)
+            data: JSON.stringify(data)
         }).done(function () {
             alert('글이 등록되었습니다.');
+            console.log('등록됨');
             location.reload();
         }).fail(function (error) {
+            console.log('오류남')
             alert(error);
         });
+
     }
 };
 
