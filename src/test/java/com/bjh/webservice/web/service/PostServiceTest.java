@@ -1,9 +1,8 @@
-package com.bjh.webservice.service;
+package com.bjh.webservice.web.service;
 
 import com.bjh.webservice.domain.posts.Posts;
 import com.bjh.webservice.domain.posts.PostsRepository;
 import com.bjh.webservice.web.DTO.PostsSaveRequestDto;
-import com.bjh.webservice.web.service.PostsService;
 import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Test;

@@ -1,7 +1,5 @@
-package com.bjh.webservice.domain;
+package com.bjh.webservice.domain.posts;
 
-import com.bjh.webservice.domain.posts.Posts;
-import com.bjh.webservice.domain.posts.PostsRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Test;

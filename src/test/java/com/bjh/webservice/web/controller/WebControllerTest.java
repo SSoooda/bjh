@@ -1,4 +1,4 @@
-package com.bjh.webservice.web;
+package com.bjh.webservice.web.controller;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
