@@ -29,9 +29,9 @@ notifications:
       - ssoooooda@gmail.com
 
 before_deploy:
-  - zip -r springboot-webservice *
+  - zip -r bjh *
   - mkdir -p deploy
-  - mv springboot-webservice.zip deploy/springboot-webservice.zip
+  - mv bjh.zip deploy/bjh.zip
 
 deploy:
   - provider: s3
