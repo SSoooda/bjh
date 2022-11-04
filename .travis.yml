@@ -30,7 +30,7 @@ notifications:
 
 deploy:
   - provider: s3
-    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
+    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값 오른쪽을 travis-ci에 넣음
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
     bucket: bjh-study
     region: ap-northeast-2
