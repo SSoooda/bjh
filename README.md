@@ -7,5 +7,6 @@
 **아마존 웹서비스 EC2, RDS**   <br>
 **travis-ci**   <br>
 **IntelliJ IDEA** <br>
+**구글 워크스페이스** <br>
 
 뭔 결제 날아오기 전에 체크할 것

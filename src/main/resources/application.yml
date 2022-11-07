@@ -5,7 +5,6 @@ spring:
 ---
 
 spring:
-  profiles: local
   jpa:
     show-sql: true
     hibernate:
@@ -20,3 +19,26 @@ spring:
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
+  config:
+    activate:
+      on-profile:
+
+# 운영 환경
+---
+spring.profiles.include: real-db
+
+server:
+  port: 8081
+spring:
+  config:
+    activate:
+      on-profile:
+---
+spring.profiles.include: real-db
+
+server:
+  port: 8082
+spring:
+  config:
+    activate:
+      on-profile:
