@@ -1,6 +1,15 @@
 spring:
   profiles:
     active: local
+  jpa:
+    properties:
+      hibernate:
+        dialect:
+          nodeValue: org.hibernate.dialect.MySQL57Dialect
+          storage_engine: innodb
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
 
 ---
 
