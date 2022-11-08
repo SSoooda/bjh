@@ -10,7 +10,7 @@ public class Application {
 
     public static final String APPLICATION_LOCATIONS = "spring.config.location="
             + "classpath:application.yml,"
-            + "E:\\ussoft\\utiProject\\config\\real-application.yml";
+            + "/home/ec2-user/app/config/bjh/real-application.yml";
 
     public static void main(String[] args) {
 //        SpringApplication.run(Application.class, args);
